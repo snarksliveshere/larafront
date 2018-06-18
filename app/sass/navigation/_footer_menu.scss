@@ -1,0 +1,21 @@
+.footer {
+  ul
+  {
+    li
+    {
+      &:before
+      {
+        content: '';
+      }
+      a
+      {
+        color: $content_color;
+        &:hover
+        {
+          color: $main_color;
+        }
+      }
+
+    }
+  }
+}

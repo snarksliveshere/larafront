@@ -1,0 +1,30 @@
+#one_side_view
+{
+    background: url("../img/bg_img_1.jpg") 0 0 no-repeat;
+    background-size:cover;
+
+    iframe
+    {
+        width: 80%;
+        height: 280px;
+    }
+    .iframe_wrap
+    {
+        position: relative;
+        z-index: 1;
+    }
+    .iframe_wrap:after
+    {
+        z-index: -1;
+        content: '';
+        background: url("../img/laptop.png") 50% 0 no-repeat;
+        background-size:contain;
+        width:130%;
+        height: 130%;
+        position: absolute;
+        left: -15%;
+        top: -15%;
+    }
+
+
+}

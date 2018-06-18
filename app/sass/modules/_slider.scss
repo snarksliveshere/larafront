@@ -1,0 +1,13 @@
+.main_slider
+{
+    @include pad-y(15,15,50,50);
+
+    .slider_scroll
+    {
+        display: inline-block;
+        width: 43px;
+        height: 80px;
+        background: url("../img/icons/icon_scroll_mouse.png") 0 0 no-repeat;
+    }
+}
+

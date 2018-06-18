@@ -1,0 +1,160 @@
+%button_text {
+  font-size: 16px;
+  font-weight:700;
+  color: $heads_color;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 26px;
+  }
+}
+%form_header_text {
+  font-size: 20px;
+  font-weight:700;
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    font-size: 32px;
+  }
+}
+%button_gradient {
+  background: linear-gradient(to bottom, $lighten_main_color ,$main_color 100%);
+}
+.button-links {
+  @extend %button_text;
+  @extend %button_gradient;
+}
+.form_header
+{
+  background-color: $form_header;
+}
+.form_header_text {
+  @extend %form_header_text;
+}
+.modal_forms form {
+  padding: 0;
+}
+
+#section_form_consult
+{
+    background: url("../img/bg_img_2.jpg") 0 0 no-repeat;
+    background-size:cover;
+}
+.section_form_consult
+{
+  background-color: rgba(60,147,209,0.8);
+
+  label,a
+  {
+    color: #fff;
+  }
+}
+
+
+
+
+#footer_bigform
+{
+    background: linear-gradient(135deg, rgba(7,0,28,1) 0%,rgba(41,137,216,1) 64%,rgba(32,124,202,1) 79%,rgba(37,91,136,1) 100%);
+  .form
+  {
+    background: #fff;
+    padding: 30px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding:10px 5%;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius:10px;
+
+  &:hover
+  {
+    color: #fff;
+  }
+
+  @include media-breakpoint-up(md)
+  {
+    font-size: 25px;
+    padding:15px 15%;
+  }
+
+
+
+}
+
+
+
+
+
+
+// modal
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  display: block;
+  position: relative;
+  z-index: 1;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 20%;
+  margin: 5% auto 0;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+  z-index: 3;
+  display: block;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

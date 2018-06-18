@@ -1,0 +1,46 @@
+.header
+{
+    &__top
+    {
+        ul
+        {
+            display: none;
+            text-align: center;
+            @include media-breakpoint-up(md)
+            {
+                display: flex;
+
+            }
+
+            li
+            {
+                padding: 0;
+
+                @include media-breakpoint-up(md)
+                {
+                    padding:0 15px;
+                }
+                @include media-breakpoint-down(md)
+                {
+                    &:nth-child(even) a
+                    {
+                        background: #ebf2ff;
+                    }
+                    &:nth-child(odd) a
+                    {
+                        background: aliceblue;
+                    }
+                }
+            }
+            a
+            {
+                @include pad-inner(5,0);
+                display: block;
+                font-size: 18px;
+                font-weight: 400;
+                position: relative;
+                color: #fff;
+            }
+        }
+    }
+}

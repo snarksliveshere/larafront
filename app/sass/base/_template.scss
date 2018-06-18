@@ -1,0 +1,165 @@
+.h1, .h2, .h3, .h4, .h5 {
+    @include pad-y();
+}
+.h1_slider {
+    @extend %h1_slider;
+}
+.h1_small {
+    @extend %h1_small;
+}
+.li_text {
+    @extend %li_text;
+}
+// LAYOUT
+.pad-equal
+{
+    @include pad-equal();
+}
+.pad-inner {
+    @include pad-inner();
+}
+// texts
+
+
+.menu
+{
+    a
+    {
+        color: #000;
+        display: block;
+        padding: 5px 0;
+        &:hover
+        {
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+.posa {
+    position: absolute;
+}
+.main_color {
+    color: $main_color;
+}
+.content_color {
+    color: $content_color;
+}
+.link_color {
+    color: $link_color
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+.tac {
+    text-align: center;
+}
+.fwb {
+    font-weight: 700;
+}
+.red {
+    color: red;
+}
+.spy {
+    display: none;
+}
+.tdu {
+    text-decoration: underline;
+}
+.black {
+    font-weight: 900;
+}
+.semibold {
+    font-weight: 600;
+}
+.ttu {
+    text-transform: uppercase;
+}
+.white {
+    color: #fff;
+}
+.black {
+    color: #000;
+}
+.unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.fz14 {
+    font-size: 14px;
+}
+.fz16 {
+    font-size: 16px;
+}
+.fz18 {
+    font-size: 18px;
+}
+.fz30 {
+    font-size: 30px;
+}
+.fw400 {
+    font-weight: 400;
+}
+.custom-control-label::before {
+    border:1px solid $main_color;
+    background: #ffffff;
+}
+.veil {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0,0,0,0.2);
+}
+.cur {
+    cursor: pointer;
+}
+.dashed {
+    padding-bottom: 3px;
+    border-bottom: 1px dashed $link-color;
+}
+.bg_color {
+    background-color: $bg_color;
+}
+.bg_main_color {
+    background-color: $main_color;
+}
+.bg_lighten_main_color {
+    background-color: $lighten_main_color;
+}
+
+.flatten_button {
+    font-size: 23px;
+    font-weight: 400;
+    padding:15px 0;
+    width: 100%;
+    text-align: center;
+    border:4px solid $main_color;
+    display: block;
+
+}
+.flatten_button_main_color {
+    color: $content_color;
+    background-color: $main_color;
+}
+.flatten_button_no_color {
+    color: $main_color;
+    background-color: transparent;
+}
+.img-responsive {
+    display: inline-block;
+}
+.opacity_bg {
+    @extend %opacity_bg;
+}
+.button_text {
+    @extend %button_text;
+}

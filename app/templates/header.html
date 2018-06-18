@@ -1,0 +1,31 @@
+<div class="header bg_color pad-inner">
+    <div class="header__top">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto no-gutters align-self-center">
+                    <div class="row justify-content-start">
+                        <div class="col-auto header__logo" style="color:#fff;">
+                            LOGO
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto">
+                    @@include('menu/top_menu.html')
+                </div>
+                <div class="col-auto d-md-none">
+                    <i class="fas fa-align-justify mobile_click cur"></i>
+                </div>
+                <div class="col-auto header__address">
+                    <i class="fas fa-phone-volume white"></i>
+                    <a href="tel:000000000" class="white">000 00 00</a><br>
+                    <span id="app" class="dashed cur link_color">
+                        <span id="show-modal" @click="showModal = true">Заказать звонок</span>
+                        <modal v-if="showModal" @close="showModal = false"></modal>
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

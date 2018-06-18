@@ -1,0 +1,23 @@
+$default-font: 'Roboto', Verdana, sans-serif;;
+$accent: orange;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;
+
+
+// colors
+$content_color: #2d2d33;
+$heads_color: #2d2d33;
+$bg_color: #252d35;
+$link_color: #AAF1F2;
+$main_color: #f3b100;
+$lighten_main_color: #FCEE21;
+
+$form_gray_color: #939393;
+$form_header: #3C93D1;

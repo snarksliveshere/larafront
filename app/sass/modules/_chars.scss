@@ -1,0 +1,23 @@
+#chars
+{
+    .chars_bottom
+    {
+        .item_title
+        {
+            font-size: 22px;
+            font-weight: 400;
+
+        }
+        .item_bigtext
+        {
+            font-size: 30px;
+            font-weight: 300;
+            @include media-breakpoint-up(lg)
+            {
+                font-size: 52px;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,6 @@
+.footer_right_block {
+  @include media-breakpoint-up(md)
+  {
+    text-align: right;
+  }
+}
